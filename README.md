@@ -1,5 +1,5 @@
 # nlpweb
-An blog web about machine learning with some nlp applications by Django
+An nlp web developed by python using Django Web Framework
 
 ### The style of mainpage: 
 ![Alt text](/img/web_1.png)
