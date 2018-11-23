@@ -1,5 +1,5 @@
 # nlpweb
-An blog about machine learning with some nlp applications web by Django
+An blog web about machine learning with some nlp applications by Django
 
 ### The style of mainpage: 
 ![Alt text](/img/web_1.png)
