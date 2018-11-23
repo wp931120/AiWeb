@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thought of Python</title>
+    <link href="{{ STATIC_URL }}extend/bootstrapcss/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}extend/bootstrapcss/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+             <a class="navbar-brand" href="#"></a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="http://180.76.190.111:8000/D3js/">博客</a></li>
+            <li><a href="http://180.76.190.111:8000/D3js/wordcloud">词云</a></li>
+            <li><a href="http://180.76.190.111:8000/D3js/segmentation">分词</a></li>
+            <li><a href="http://180.76.190.111:8000/D3js/echart">图表</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" >
+        <div class="col-sm-3">
+            <div class="list-group">
+                 <a href="" class="list-group-item" ><span class = "span"><img src="{{ STATIC_URL }}img/eye.png"></span>CV</a>
+                 <a href="" class="list-group-item"><span class = "span"><img src="{{ STATIC_URL }}img/nlp.png"></span>NLP</a>
+                 <a href="" class="list-group-item"><span class = "span"><img src="{{ STATIC_URL }}img/computer.png"></span>Machine Learning</a>
+                 <a href="" class="list-group-item"><span class = "span"><img src="{{ STATIC_URL }}img/network.png"></span>Deep Learning</a>
+            </div>
+        </div>
+        <div class="col-sm-7">
+             <div class="blog-list clearfix">
+                 <div class="col-xs-4">
+                      <img src="{{ STATIC_URL }}img/blog_1.png">
+                 </div>
+                 <div class="col-xs-8">
+                     <a href="https://www.jianshu.com/p/70e1a9ae7b4f" class="title">机器是如何通过人工智能慢慢超越人类的</a>
+                     <div class="abstract">人工智能(Artificial Intelligence)已经被视为继农业革命,工业革命,信息革命之后又一次滚滚碾来，势不可挡的世界性的大革命。</div>
+                     <div class = tag>
+                         <span ><img src="{{ STATIC_URL }}img/sign.png"></span>
+                         <span class = "tagword">机器学习</span>
+                     </div>
+                 </div>
+             </div>
+             <div class="blog-list clearfix">
+                 <div class="col-xs-4">
+                      <img src="{{ STATIC_URL }}img/blog_1.png">
+                 </div>
+                 <div class="col-xs-8">
+                     <div class="title">机器是如何通过人工智能慢慢超越人类的</div>
+                     <div class="abstract">人工智能(Artificial Intelligence)已经被视为继农业革命,工业革命,信息革命之后又一次滚滚碾来，势不可挡的世界性的大革命。</div>
+                     <div class = tag>
+                         <span ><img src="{{ STATIC_URL }}img/sign.png"></span>
+                         <span class = "tagword">机器学习</span>
+                     </div>
+                 </div>
+             </div>
+
+        </div>
+        <div class="col-sm-2">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="关键词">
+                 <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">搜索</button>
+                 </span>
+            </div>
+            <div class = "infomation">
+              <a href="" class="list-group-item" ><span class = "span"><img src="{{ STATIC_URL }}img/boy.png"></span>王鹏</a>
+              <a href="" class="list-group-item" ><span class = "span"><img src="{{ STATIC_URL }}img/phone.png"></span>13135652700</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+
+
+</div>
+
+
+
+
+</body>
+<script src="{{ STATIC_URL }}extend/bootstrapjs/bootstrap.min.js"></script>
+<script src="{{ STATIC_URL }}extend/bootstrapjs/jquery-2.1.1.js"></script>
+{% block js %}{% endblock %}
+</html>

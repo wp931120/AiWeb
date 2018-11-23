@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thought of Python</title>
+    <link href="{{ STATIC_URL }}extend/bootstrapcss/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}extend/bootstrapcss/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+             <a class="navbar-brand" href="#"></a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="http://180.76.190.111:8000/D3js/">博客</a></li>
+            <li><a href="http://180.76.190.111:8000/D3js/wordcloud">词云</a></li>
+            <li><a href="http://180.76.190.111:8000/D3js/segmentation">分词</a></li>
+            <li><a href="http://180.76.190.111:8000/D3js/echart">图表</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-sm-6">
+       <form role="form">
+            <div class="form-group">
+                <label for="name">词云素材</label>
+                <textarea class="form-control" id = "words" rows="18"></textarea>
+            </div>
+       </form>
+        <div>
+            <div class="input-group">
+                <input type="text" class="form-control" id ="name" placeholder="取个名字">
+                 <span class="input-group-btn">
+                        <button  type="submit" class="btn btn-default" id="btn_wordcloud">生成词云</button>
+                 </span>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+         <label for="name">词云图</label>
+         <img src='{{ picname }}', id ="imgsrc" >
+{#         <button type="button" class="btn btn-default pull-right" id = "btn_download">下载 </button>#}
+    </div>
+</div>
+
+
+<div>
+
+
+</div>
+
+
+
+
+</body>
+<script src="{{ STATIC_URL }}extend/bootstrapjs/bootstrap.min.js"></script>
+<script src="{{ STATIC_URL }}extend/bootstrapjs/jquery-2.1.1.js"></script>
+<script src="{{ STATIC_URL }}js/wordcloud.js"></script>
+{% block js %}{% endblock %}
+</html>
