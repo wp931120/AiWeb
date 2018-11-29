@@ -10,7 +10,7 @@ than click the generate button
 ![Alt text](/img/web_2.png)
 
 ### The User Interface of imagenet app: 
-![Alt text](/img/imagenet.png)
+![Alt text](/img/imgnet.png)
 
 ### The result of imagenet app: 
 ![Alt text](/img/dog.png)
