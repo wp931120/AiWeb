@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thought of Python</title>
+    <link href="{{ STATIC_URL }}extend/bootstrapcss/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}extend/bootstrapcss/main.css" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="navbar navbar-default">
+<div class="container">
+    <div class="navbar-header">
+         <a class="navbar-brand" href="#"></a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a href="http://180.76.190.111:8000/D3js/">博客</a></li>
+        <li><a href="http://180.76.190.111:8000/D3js/wordcloud">词云</a></li>
+        <li><a href="http://180.76.190.111:8000/D3js/segmentation">分词</a></li>
+        <li><a href="http://180.76.190.111:8000/D3js/imagenet">Imagenet</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+         <div class="col-sm-6 col-md-offset-3">
+             <label for="picname">上传图片</label>
+             <img src="{{ picname }}"/>
+             <img src="{{upload_name}}" id ="uploadsrc"/>
+             {#         <button type="button" class="btn btn-default pull-right" id = "btn_download">下载 </button>#}
+        </div>
+
+    </div>
+    <div class="row">
+     <form class="form-inline col-md-offset-4" action="upload_file/" method="post" enctype="multipart/form-data">
+           <div class="form-group">
+                 <label class="sr-only" for="inputfile">文件输入</label>
+                 <input type="file" id = "fileneme" name="myfile"/><br>
+           </div>
+           <div class="form-group">
+                 <button class="btn btn-danger" type="submit" id = "showImg">上传图片</button>
+           </div>
+
+     </form>
+    <div class="row col-sm-6 col-md-offset-3">
+        <button type="button" class="btn btn-default btn-success col-md-offset-5" id = "ImgA">识别</button>
+        <textarea class="form-control" id = "res" rows="1" disabled = "disabled"></textarea>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+<script src="{{ STATIC_URL }}extend/bootstrapjs/bootstrap.min.js"></script>
+<script src="{{ STATIC_URL }}extend/bootstrapjs/jquery-2.1.1.js"></script>
+<script src="{{ STATIC_URL }}extend/echarts.min.js"></script>
+<script src="{{ STATIC_URL }}js/imgnet.js"></script>
+{% block js %}{% endblock %}
+</html>

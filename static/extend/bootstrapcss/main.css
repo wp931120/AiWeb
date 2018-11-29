@@ -1,6 +1,7 @@
 img{
     display: block;
     max-width: 100%;
+    margin-bottom: 15px;
 }
 
 .navbar-default{
@@ -94,3 +95,16 @@ img{
     height: 100%;
     margin-bottom: 25px;
 }
+
+.btn{
+     margin-bottom: 15px;
+}
+
+.row{
+     margin-bottom: 15px;
+}
+
+.form-control{
+    resize: none;
+}
+
