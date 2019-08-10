@@ -1,4 +1,4 @@
-# nlpweb
+# AI application web
 An nlp web developed by python using Django Web Framework
 
 ### The style of mainpage: 
