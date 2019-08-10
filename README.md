@@ -1,5 +1,5 @@
-# AI application web
-An nlp web developed by python using Django Web Framework
+# AI applications web
+An AI applications web developed by python using Django Web Framework
 
 ### The style of mainpage: 
 ![Alt text](/img/web_1.png)
