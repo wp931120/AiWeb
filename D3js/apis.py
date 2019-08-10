@@ -15,7 +15,7 @@ defeine some apis
 
 def gcloud(text, name):
     """
-    y用于生产词云
+    用于生成词云
     :param text:
     :param name:
     :return:
