@@ -1,5 +1,5 @@
 # AI applications web
-An AI applications web developed by python using Django Web Framework
+An AI applications web developed by python based on Django Web Framework
 
 ### The style of mainpage: 
 ![Alt text](/img/web_1.png)
